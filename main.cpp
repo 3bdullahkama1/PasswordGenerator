@@ -12,16 +12,22 @@ string symbol = "!@#$%^&(){}[]/*-+|";                   // 18
 
 int getRandom(int MIN, int MAX)
 {
+    // This Fanction return Random Number in [ MIN , MAX ]
     return MIN + rand() % ((MAX + 1) - MIN);
 }
-
 int getType(int MIN, int MAX)
 {
+    // Return Type of Char would be added
+    // if 1 is small alphabet
+    // if 2 is capital alphabet
+    // if 3 is digit
+    // if 4 is symbol
     return getRandom(MIN, MAX);
 }
 
 char getChar(int type)
 {
+    // return char to string
     char result = '0';
     if (type == 1)
     {
